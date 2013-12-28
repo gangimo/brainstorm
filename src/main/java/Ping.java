@@ -6,16 +6,15 @@ import java.net.InetAddress;
  * User: gangimo
  * Date: 2013/12/29
  * Time: 2:37
- * To change this template use File | Settings | File Templates.
  */
 public class Ping {
 
-	int exec(String address){
-		try{
+	int exec(String address) {
+		try {
 			InetAddress inet = InetAddress.getByName(address);
 			boolean isReachable = inet.isReachable(10);
 			System.out.println(isReachable);
-		}catch (IOException e){
+		} catch (IOException e) {
 			e.printStackTrace();
 			return 1;
 
