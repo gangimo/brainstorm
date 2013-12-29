@@ -17,15 +17,12 @@ public class Ping {
 		} catch (IOException e) {
 			e.printStackTrace();
 			return 1;
-
 		}
 		return 0;
 	}
 
-	public static void main(String argv[]) {
+	public static int main(String argv[]) {
 		Ping ping = new Ping();
-		ping.exec(argv[0]);
-
-
+		return ping.exec(argv[0]);
 	}
 }
