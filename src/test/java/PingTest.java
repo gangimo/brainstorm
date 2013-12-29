@@ -21,7 +21,6 @@ public class PingTest {
 		assertEquals(ping.exec("lalalalla"), 1);
 	}
 
-
 	@Test
 	public void main() {
 		String[] argv = {"127.0.0.1"};
