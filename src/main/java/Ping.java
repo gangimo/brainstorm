@@ -13,7 +13,7 @@ public class Ping {
 		try {
 			InetAddress inet = InetAddress.getByName(address);
 			boolean isReachable = inet.isReachable(10);
-			System.out.println(isReachable);
+			System.out.println(address + ":" + isReachable);
 		} catch (IOException e) {
 			e.printStackTrace();
 			return 1;
